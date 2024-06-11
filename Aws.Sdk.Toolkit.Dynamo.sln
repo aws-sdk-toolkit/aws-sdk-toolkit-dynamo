@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{00633434-F65A-4E12-9515-3DD31E8BAEB1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "default", "default", "{7AFC94D7-D1CD-4295-A664-1BC614AE4688}"
+	ProjectSection(SolutionItems) = preProject
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{570D82E8-4F43-440A-B017-525B08778CB4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwsTool.Dynamo", "src\AwsTool.Dynamo\AwsTool.Dynamo.csproj", "{1C228E3F-514F-4DF9-BC39-4DB26A3B3FFD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1C228E3F-514F-4DF9-BC39-4DB26A3B3FFD} = {00633434-F65A-4E12-9515-3DD31E8BAEB1}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1C228E3F-514F-4DF9-BC39-4DB26A3B3FFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C228E3F-514F-4DF9-BC39-4DB26A3B3FFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C228E3F-514F-4DF9-BC39-4DB26A3B3FFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C228E3F-514F-4DF9-BC39-4DB26A3B3FFD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
