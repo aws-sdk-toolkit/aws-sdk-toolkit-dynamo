@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 using Amazon;
 
-namespace AwsTool.Dynamo.Models.Settings;
+namespace AwsTool.Sdk.Dynamo.Models.Settings;
 
 public class DynamoDbSettings
 {

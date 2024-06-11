@@ -1,4 +1,4 @@
-﻿namespace AwsTool.Dynamo.Models.Settings;
+﻿namespace AwsTool.Sdk.Dynamo.Models.Settings;
 
 public enum AwsRegionType
 {

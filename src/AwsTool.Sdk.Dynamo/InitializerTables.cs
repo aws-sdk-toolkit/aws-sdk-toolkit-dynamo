@@ -1,8 +1,8 @@
 using Amazon.DynamoDBv2;
 using Amazon.DynamoDBv2.Model;
-using AwsTool.Dynamo.Models.Tables;
+using AwsTool.Sdk.Dynamo.Models.Tables;
 
-namespace AwsTool.Dynamo;
+namespace AwsTool.Sdk.Dynamo;
 
 public class InitializerTables : IInitializerTables
 {

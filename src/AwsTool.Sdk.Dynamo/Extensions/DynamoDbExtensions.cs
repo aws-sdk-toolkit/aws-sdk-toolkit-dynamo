@@ -1,13 +1,13 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 using Amazon.DynamoDBv2;
 using Amazon.DynamoDBv2.DataModel;
-using AwsTool.Dynamo.Models.Settings;
-using AwsTool.Dynamo.Models.Tables;
+using AwsTool.Sdk.Dynamo.Models.Settings;
+using AwsTool.Sdk.Dynamo.Models.Tables;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace AwsTool.Dynamo.Extensions;
+namespace AwsTool.Sdk.Dynamo.Extensions;
 
 [ExcludeFromCodeCoverage]
 public static class DynamoDbExtensions

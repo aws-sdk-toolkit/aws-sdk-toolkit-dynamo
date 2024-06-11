@@ -1,8 +1,7 @@
 using System.Diagnostics.CodeAnalysis;
-using AwsTool.Dynamo.Models.Tables;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace AwsTool.Dynamo.Extensions;
+namespace AwsTool.Sdk.Dynamo.Extensions;
 
 [ExcludeFromCodeCoverage]
 public static class TablesExtensions

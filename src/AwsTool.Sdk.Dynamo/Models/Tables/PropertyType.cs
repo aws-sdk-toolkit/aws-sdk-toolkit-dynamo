@@ -1,4 +1,4 @@
-namespace AwsTool.Dynamo.Models.Tables;
+namespace AwsTool.Sdk.Dynamo.Models.Tables;
 
 public enum PropertyType
 {

@@ -1,6 +1,6 @@
 using Amazon.DynamoDBv2;
 
-namespace AwsTool.Dynamo.Models.Tables;
+namespace AwsTool.Sdk.Dynamo.Models.Tables;
 
 public class SchemaTable
 {

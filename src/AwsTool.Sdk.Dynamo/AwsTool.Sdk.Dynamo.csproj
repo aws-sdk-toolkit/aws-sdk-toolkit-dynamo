@@ -3,10 +3,10 @@
     <PropertyGroup>
         <Version>1.0.0-beta</Version>
         <TargetFramework>net8.0</TargetFramework>
-        <RootNamespace>AwsTool.Dynamo</RootNamespace>
+        <RootNamespace>AwsTool.Sdk.Dynamo</RootNamespace>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <PackageTags>AWS;SNS</PackageTags>
+        <PackageTags>AWS;Dynamo</PackageTags>
         <PackageDescription>Responsible for integrating with the AWS Dynamo service.</PackageDescription>
     </PropertyGroup>
 
