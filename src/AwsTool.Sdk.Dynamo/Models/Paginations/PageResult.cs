@@ -15,7 +15,7 @@ public class PageResult<T> where T : new()
     
     private string? ToBase64(string value)
     {
-        if (string.IsNullOrEmpty(value)) return null;
+        if (string.IsNullOrEmpty(value) || "{}".Equals(value)) return null;
         
         var bytes = Encoding.ASCII.GetBytes(value);
         return Convert.ToBase64String(bytes);
