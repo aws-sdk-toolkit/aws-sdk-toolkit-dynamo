@@ -3,17 +3,35 @@ using Amazon;
 
 namespace AwsTool.Sdk.Dynamo.Models.Settings;
 
+/// <summary>
+/// Represents the settings used to connect to the dynamo.
+/// </summary>
 public class DynamoDbSettings
 {
+    /// <summary>
+    /// Access key.
+    /// </summary>
     public string AccessKey { get; set; }
+    /// <summary>
+    /// Secret key.
+    /// </summary>
     public string SecretKey { get; set; }
-    public string Token { get; set; }
+    /// <summary>
+    /// URL to access a local dynamo table.
+    /// </summary>
     public string ServiceURL { get; set; }
+    /// <summary>
+    /// Active token of the section (only if connecting to a Dynamo instance on AWS).
+    /// </summary>
+    public string Token { get; set; }
+    /// <summary>
+    /// Region where the dynamo resource is provisioned. 
+    /// </summary>
     public AwsRegionType? Region { get; set; }
 
-    public bool HasTokenDefined => !string.IsNullOrEmpty(Token);
+    internal bool HasTokenDefined => !string.IsNullOrEmpty(Token);
     
-    public RegionEndpoint GetRegionAws()
+    internal RegionEndpoint GetRegionAws()
         => Region switch
         {
             AwsRegionType.UsEast1 => RegionEndpoint.USEast1,

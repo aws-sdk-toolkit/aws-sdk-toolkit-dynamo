@@ -4,7 +4,7 @@ using AwsTool.Sdk.Dynamo.Models.Tables;
 
 namespace AwsTool.Sdk.Dynamo;
 
-public class InitializerTables : IInitializerTables
+internal class InitializerTables : IInitializerTables
 {
     private readonly IAmazonDynamoDB _dynamoDb;
     private readonly IEnumerable<TablesMapper> _tables;
@@ -41,7 +41,7 @@ public class InitializerTables : IInitializerTables
     }
 }
 
-public interface IInitializerTables
+internal interface IInitializerTables
 {
     Task InitializeAsync(CancellationToken cancellationToken);
 }

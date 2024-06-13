@@ -12,6 +12,13 @@ namespace AwsTool.Sdk.Dynamo.Extensions;
 [ExcludeFromCodeCoverage]
 public static class DynamoDbExtensions
 {
+    /// <summary>
+    /// Add basic dynamo resource access settings.
+    /// </summary>
+    /// <param name="services">Specifies the contract for a collection of service descriptors.</param>
+    /// <param name="configuration">Represents a set of key/value application configuration properties.</param>
+    /// <param name="environment">Provides information about the hosting environment an application is running in.</param>
+    /// <returns>Specifies the contract for a collection of service descriptors.</returns>
     public static IServiceCollection AddDynamoDb(this IServiceCollection services,
         IConfiguration configuration, IHostEnvironment environment)
     {
@@ -29,8 +36,13 @@ public static class DynamoDbExtensions
         return services;
     }
 
-    public static IServiceCollection RegisterTables(this IServiceCollection services,
-        IEnumerable<TablesMapper> tables)
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="services">Specifies the contract for a collection of service descriptors.</param>
+    /// <param name="tables">Dynamo tables that will be used.</param>
+    /// <returns>Specifies the contract for a collection of service descriptors.</returns>
+    public static IServiceCollection RegisterTables(this IServiceCollection services, IEnumerable<TablesMapper> tables)
     {
         services.AddSingleton(tables);
         services.AddSingleton<IInitializerTables, InitializerTables>();

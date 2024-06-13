@@ -1,5 +1,8 @@
 ﻿namespace AwsTool.Sdk.Dynamo.Models.Settings;
 
+/// <summary>
+/// Represents the AWS Regions.
+/// </summary>
 public enum AwsRegionType
 {
     UsEast1 = 0,
