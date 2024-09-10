@@ -37,7 +37,7 @@ public static class DynamoDbExtensions
     }
 
     /// <summary>
-    /// 
+    /// Starts table configurations and creates them.
     /// </summary>
     /// <param name="services">Specifies the contract for a collection of service descriptors.</param>
     /// <param name="tables">Dynamo tables that will be used.</param>
